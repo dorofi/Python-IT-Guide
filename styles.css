@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Минимальная высота экрана */
+}
+
+button {
+    background-color: black;
+    color: #0f0;
+    border: 2px solid #0f0;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 5px #0f0;
+}
+
+button:hover {
+    box-shadow: 0 0 20px #0f0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #0f0;
+    color: black;
+    transition: 0.3s;
+}
+
+
+section {
+    flex: 1; /* Заполняет всю доступную высоту */
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+footer {
+    text-align: center;
+    padding: 0.2px; /* Сделал футер меньше */
+    background-color: rgba(0, 0, 0, 0.3); /* Прозрачный черный */
+    color: white;
+    font-size: 11px; /* Уменьшил текст */
+    position: fixed; /* Фиксируем футер внизу */
+    bottom: 0;
+    width: 100%;
+}
+
+/* Оформление контейнера кода */
+.code-container {
+    background-color: #1e1e1e;
+    color: #0f0;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: monospace;
+    white-space: pre-wrap; /* Разрешает перенос строк */
+    word-wrap: break-word; /* Переносит длинные слова */
+    overflow: hidden;
+    width: 90%; /* Используем 90% ширины экрана */
+    max-width: 600px;
+    min-height: 200px;
+    border-right: 2px solid #0f0;
+    margin: 0 auto; /* Центрирование */
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Адаптация для мобильных экранов */
+@media (max-width: 768px) {
+    .code-container {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+    }
+}
+
+
+/* Анимация печати */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Анимация мигающего курсора */
+@keyframes blinkCursor {
+    50% {
+        border-color: transparent;
+    }
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes matrix {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 100%;
+    }
+}
+
+body {
+    background: black url('https://i.imgur.com/1JyYP4O.gif') repeat;
+    animation: matrix 20s linear infinite;
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.category {
+        margin-bottom: 30px;
+    }
+
+    .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .link-card {
+        display: flex;
+        align-items: center;
+        background-color: #f4f4f4;
+        padding: 10px 20px;
+        border-radius: 10px;
+        text-decoration: none;
+        color: #333;
+        border: 2px solid #ddd;
+        transition: all 0.3s ease;
+        width: 200px;
+        margin-bottom: 10px;
+    }
+
+    .link-card:hover {
+        background-color: #f1faee;
+        border-color: #2a9d8f;
+    }
+
+    .link-card img {
+        margin-right: 10px;
+    }
+
+    h3 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }

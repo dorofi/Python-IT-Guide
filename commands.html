@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Команды с примерами</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Подключаем CSS для Highlight.js -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css" rel="stylesheet">
+
+    <!-- Подключаем JavaScript для Highlight.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+
+    <script>hljs.highlightAll();</script> <!-- Инициализация Highlight.js -->
+</head>
+<body>
+
+<header>
+    <h1>Команды Python с Примерами</h1>
+</header>
+
+<nav>
+    <a href="index.html">Главная</a>
+    <a href="sites.html">Полезные сайты</a>
+    <a href="dictionary.html">IT-словарь</a>
+</nav>
+
+<section>
+    <pre><code class="python">
+        # Пример Python-кода
+        def greet(name):
+            print(f"Привет, {name}!")
+
+        </code></pre>
+
+    <pre><code class="python">
+        # Пример 1: создание переменных
+        x = 10        # целое число
+        y = 3.14      # число с плавающей точкой
+        name = "Python"  # строка
+        print(x, y, name)
+
+        </code></pre>
+
+    <pre><code class="python">
+        # Пример 2: условный оператор
+        age = 18
+        if age >= 18:
+            print("Вам 18 лет или больше")
+        else:
+            print("Вы моложе 18 лет")
+
+        </code></pre>
+
+    <pre><code class="python">
+        # Пример 3: цикл for
+        for i in range(5):  # от 0 до 4
+            print(i)
+
+        </code></pre>
+
+    <pre><code class="python">
+        # Пример 4: цикл while
+        count = 0
+        while count < 5:
+            print(count)
+            count += 1  # увеличиваем count на 1
+
+        </code></pre>
+
+    <pre><code class="python">
+        # Пример 5: функция
+        def greet(name):
+            print(f"Привет, {name}!")
+
+        greet("Иван")
+
+        </code></pre>
+
+    <pre><code class="python">
+        # Пример 6: список
+        fruits = ["яблоко", "банан", "киви"]
+        fruits.append("апельсин")  # добавление элемента в список
+        print(fruits)
+
+        </code></pre>
+
+    <pre><code class="python">
+        # Пример 7: словарь
+        person = {"name": "Иван", "age": 30}
+        print(person["name"])  # доступ к значению по ключу
+
+        </code></pre>
+
+    <pre><code class="python">
+        # Пример 8: множество
+        numbers = {1, 2, 3, 3, 4}
+        numbers.add(5)  # добавление элемента
+        print(numbers)
+
+        </code></pre>
+
+    <pre><code class="python">
+        # Пример 9: обработка ошибок
+        try:
+            x = 10 / 0  # деление на ноль
+        except ZeroDivisionError:
+            print("Ошибка: деление на ноль!")
+
+        </code></pre>
+
+    <pre><code class="python">
+        # Пример 10: итерация по строкам
+        text = "Python"
+        for char in text:
+            print(char)
+
+        </code></pre>
+
+    <pre><code class="python">
+        # Пример 11: lambda
+        multiply = lambda x, y: x * y
+        print(multiply(2, 3))
+
+        </code></pre>
+
+    <pre><code class="python">
+        # Пример 12: классы и объекты
+        class Car:
+            def __init__(self, brand, model):
+                self.brand = brand
+                self.model = model
+
+            def display_info(self):
+                print(f"{self.brand} {self.model}")
+
+        car1 = Car("Toyota", "Corolla")
+        car1.display_info()
+
+        </code></pre>
+
+    <pre><code class="python">
+        # Пример 13: работа с файлами
+        with open("example.txt", "w") as file:
+            file.write("Привет, мир!")
+
+        with open("example.txt", "r") as file:
+            print(file.read())
+
+        </code></pre>
+
+    <pre><code class="python">
+        # Пример 14: работа с библиотекой math
+        import math
+        print(math.sqrt(16))  # извлечение квадратного корня
+        print(math.pi)        # число Пи
+
+        </code></pre>
+
+    <pre><code class="python">
+        # Пример 15: объединение строк
+        first_name = "Иван"
+        last_name = "Иванов"
+        full_name = first_name + " " + last_name
+        print(full_name)
+
+        </code></pre>
+
+    <pre><code class="python">
+        # Пример 16: форматирование строк
+        name = "Иван"
+        age = 30
+        print(f"Меня зовут {name}, мне {age} лет.")
+
+        </code></pre>
+
+    <pre><code class="python">
+        # Пример 17: поиск элемента в списке
+        fruits = ["яблоко", "банан", "киви"]
+        if "банан" in fruits:
+            print("Банан есть в списке!")
+        else:
+            print("Банана нет в списке.")
+
+        </code></pre>
+
+    <pre><code class="python">
+        # Пример 18: работа с датой и временем
+        from datetime import datetime
+        now = datetime.now()
+        print("Текущая дата и время:", now)
+
+        </code></pre>
+
+    <pre><code class="python">
+        # Пример 19: использование zip
+        names = ["Иван", "Мария", "Петр"]
+        ages = [30, 25, 40]
+        combined = zip(names, ages)
+
+        for name, age in combined:
+            print(f"{name} - {age} лет")
+
+        </code></pre>
+
+    <pre><code class="python">
+        # Пример 20: сортировка списка
+        numbers = [5, 2, 9, 1, 5, 6]
+        numbers.sort()  # сортировка по возрастанию
+        print(numbers)
+        
+        </code></pre>
+
+</section>
+
+<footer>
+    <p>&copy; 2025 Python IT Guide</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
